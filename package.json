@@ -10,7 +10,11 @@
   },
   "dependencies": {
     "@astrojs/vercel": "^8.1.4",
-    "astro": "^5.8.1",
+    "@strifeapp/astro": "^1.0.7",
+    "astro": "^5.8.0",
     "ravendb": "^7.0.0"
+  },
+  "devDependencies": {
+    "@strifeapp/types": "^0.0.5"
   }
 }

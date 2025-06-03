@@ -1,8 +1,8 @@
 import { DocumentStore } from "ravendb";
 
 const store = new DocumentStore(
-  "http://live-test.ravendb.net/", // Change to your RavenDB server URL
-  "test123123"       // Change to your database name
+  import.meta.env.STRIFE_DATABASE_URLS,
+  import.meta.env.STRIFE_DATABASE
 );
 store.initialize();
 
