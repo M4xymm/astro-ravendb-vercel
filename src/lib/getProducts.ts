@@ -1,6 +1,6 @@
-import {openSession} from "./ravendb";
+import store from "./ravendb";
 
 export async function getProducts() {
-  const session = openSession();
+  const session = store.openSession();
   return await session.query({collection: "Pages"}).all();
 }

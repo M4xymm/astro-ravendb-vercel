@@ -4,8 +4,10 @@ const store = new DocumentStore(
   import.meta.env.STRIFE_DATABASE_URLS,
   import.meta.env.STRIFE_DATABASE
 );
-store.initialize();
+// store.initialize();
+//
+// export function openSession() {
+//   return store.openSession();
+// }
 
-export function openSession() {
-  return store.openSession();
-}
+export default store.initialize();
