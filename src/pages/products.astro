@@ -1,0 +1,11 @@
+---
+import { getProducts } from "../lib/getProducts";
+
+const products = await getProducts();
+---
+
+{products ? (
+  <pre>{JSON.stringify(products, null, 2)}</pre>
+) : (
+  <p>No products found.</p>
+)}

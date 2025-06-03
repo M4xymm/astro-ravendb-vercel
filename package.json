@@ -9,6 +9,8 @@
     "astro": "astro"
   },
   "dependencies": {
-    "astro": "^5.8.1"
+    "@astrojs/vercel": "^8.1.4",
+    "astro": "^5.8.1",
+    "ravendb": "^7.0.0"
   }
 }
